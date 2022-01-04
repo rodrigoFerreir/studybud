@@ -1,0 +1,10 @@
+<h3>Topicos</h3>
+<hr />
+<div>
+  <a href="{%url 'home'%}">Todos</a>
+</div>
+{% for topic in topics %}
+<div>
+  <a href="{%url 'home'%}?query={{topic.name}}">{{topic}}</a>
+</div>
+{% endfor %}
